@@ -17,10 +17,10 @@ public class CollectionGetter implements Runnable{
             }
             catch(InterruptedException e)
             {}
-            double randNum = (Math.random() * (.6)) - .3;
+            double randNum = (Math.random() *10) - 3;
 
 
-            DecimalFormat decimal = new DecimalFormat("#.##");
+            DecimalFormat decimal = new DecimalFormat("##.##");
 
             price = price + randNum;
 
