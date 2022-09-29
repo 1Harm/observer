@@ -16,7 +16,7 @@ public class CollectionObserver implements Observer{
     }
     public void printThePrices(){
 
-        System.out.println(observerID + "\nGame: " + gamePrice + "\nBook: " +
+        System.out.println("Client with ID " + observerID + "\nGame: " + gamePrice + "\nBook: " +
                 bookPrice + "\nArt: " + artPrice + "\n");
 
     }
