@@ -2,9 +2,9 @@ import static java.lang.Math.round;
 
 public class Main {
     public static void main(String[] args){
-  /*      CollectionShop collectionShop = new CollectionShop();
+/*    CollectionShop collectionShop = new CollectionShop();
 
-        // Creating an Observer that will be sent updates from priceObserver
+  //       Creating an Observer that will be sent updates from priceObserver
 
         CollectionObserver observer1 = new CollectionObserver(collectionShop);
 
@@ -18,7 +18,7 @@ public class Main {
         collectionShop.setBookPrice(52.00);
         collectionShop.setArt(123.00);
 
-        // Delete one of the observers
+         //Delete one of the observers
 
         collectionShop.unregister(observer2);
         Runnable getGame = new CollectionGetter(collectionShop, 2,"Game", 212.00);
@@ -28,9 +28,9 @@ public class Main {
 
         new Thread(getGame).start();
         new Thread(getBook).start();
-        new Thread(getArt).start();
-*/
-       /* dressable histDress = new historicalDress(new basicOutfit());
+        new Thread(getArt).start();*/
+
+        dressable histDress = new historicalDress(new basicOutfit());
         histDress.collecting();
         System.out.println();
 
@@ -42,21 +42,21 @@ public class Main {
 
         dressable historicalValuableDress = new historicalDress(new valueableDress(new basicOutfit()));
         historicalValuableDress.collecting();
-        System.out.println();*/
+        System.out.println();
 
         book romance = new Romance();
         romance=new signature(romance);
         romance=new additionalEdition(romance);
-        System.out.println("Desc: "+romance.getVoucher());
+        System.out.println("List: "+romance.getVoucher());
         System.out.println("Price: "+round(romance.getPrice()));
         book sciFi=new SciFiBook();
         sciFi=new signature(sciFi);
         sciFi=new limitedCollection(sciFi);
-        System.out.println("Desc: "+sciFi.getVoucher());
+        System.out.println("List: "+sciFi.getVoucher());
         System.out.println("Price: "+sciFi.getPrice());
         book ord=new ordinaryBook();
         ord=new limitedCollection(ord);
-        System.out.println("Desc: "+ord.getVoucher());
+        System.out.println("List: "+ord.getVoucher());
         System.out.println("Price: "+ord.getPrice());
     }
 }
